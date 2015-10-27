@@ -1,0 +1,5 @@
+Zoom Chart
+ - Vẽ biểu đồ theo dõi 1 hay nhiều đối tượng.
+    + Với 1 đối tượng : Dữ liệu truyền vào là 1 dataset (object dạng ma trận). Với mỗi một ma trận con của dataset là một bộ dữ liệu xác định mốc thời gian (cột x) và thông số giá trị (cột y). Vẽ theo đồ thị trục x,y (với x,y tương ứng là mốc thời gian, y là đơn vị số liệu). Mỗi 1 điểm trên đồ thị tương ứng với giá trị số lượng tại 1 thời điểm cụ thể. Và các nút được nối lại với nhau bằng các đường thẳng. (Tương tự như biểu đồ đường).
+    + Với nhiều đối tượng : Kiểu dữ liệu truyền vào là 1 dataset (object dạng ma trận) lớn với không giới hạn các mảng con (một đối tượng). Mỗi mảng con mang nhiều bộ dữ liệu (ứng với mỗi 1 nút là 1 bộ gồm giá trị đơn vị cột y và mốc số liệu chung cột x). Ứng với mỗi 1 đối tượng là 1 đường vẽ màu riêng biệt. Mỗi một đường màu sẽ có 1 trục y biểu diễn tỉ lệ đơn vị khác nhau. Đối với trục x dùng chung cho tất cả đối tượng, có thể dùng được các kiểu đơn vị khác (ngoài thời gian).
+ - Kéo chọn vùng để zoom, double vào đồ thị để reset zoom (hoặc option thêm nút reset). Khi rê chuột vào mỗi nút sẽ hiện ra chú thích mốc thời gian và giá trị tại thời điểm đó.
